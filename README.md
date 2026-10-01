@@ -59,6 +59,18 @@ Python target calculator       Deterministic prompt precheck
 
 Python owns arithmetic, data joins, feasibility, exclusions, history, and final validation. The language model interprets flexible food language and compares subjective qualities such as spice, comfort, portability, variety, and cuisine. It cannot invent food, change prices or nutrition, relax the budget, or select a plan outside the shortlist.
 
+## Build versus buy decision
+
+The system decides what to build or rent at operation level. Python owns calculations and hard constraints because they must be exact, testable, and auditable. OpenRouter rents model intelligence only for language interpretation and subjective ranking. Claude was considered in the problem statement, but the final implementation is vendor-independent so the configured model can be replaced without changing the optimizer.
+
+| Factor | Decision and reason |
+|---|---|
+| Cost | Rent at prototype volume; the 25-call evaluation cost US$0.00546315, far below the cost of training or hosting a foundation model. |
+| Latency | Keep calculations local and send compact JSON. API response time is acceptable for the notebook but has not yet been measured as a formal metric. |
+| Control | Build budget, nutrition, dietary, meal-slot, history, and validation logic in Python; constrain rented model output with schemas and shortlist IDs. |
+| Data gravity | Send only the user request and at most five compact synthetic plans, not the full dataset or persistent history. |
+| Regulation | Keep auditable decisions local and avoid medical claims; real deployment would require privacy, residency, provider-contract, and nutrition review. |
+
 ## Run in Google Colab
 
 1. Upload this repository folder to Google Drive.
@@ -121,15 +133,9 @@ The one failure was a false contradiction on “non-veg lunch” because the pre
 
 Five blind judgements are insufficient to establish that Layer 2 improves preference. Cases where AI and the optimizer select the same plan should be recorded as `same_selection`, not treated as a blind tie. Human comparison is meaningful only when the two plans differ. See [EVALS_EXPLAINER.md](EVALS_EXPLAINER.md).
 
-## Tests
+## Reproducible validation
 
-Run the deterministic tests from the repository folder:
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-The current suite contains 33 tests covering target calculation, feasibility, meal slots, egg-free vegetarian filtering, recommendation history, shortlist diversity, actual-intake calculation, schema validation, prompt injection, model shortlist confinement, and malformed-response retry.
+Run the notebook from the beginning, then set `CASE_IDS_TO_RUN = None` in the evaluation section. The checked-in `evaluation_results/` folder contains the latest complete 20-case run, including Layer 1 outputs, Layer 2 outputs, blind-comparison records, detailed JSON, and the summary table.
 
 ## Guardrails
 
@@ -146,7 +152,7 @@ The current suite contains 33 tests covering target calculation, feasibility, me
 | `data/menu.json` | Synthetic menu, price and preference metadata |
 | `data/nutrition.json` | Synthetic nutrition and mapping provenance |
 | `data/meal_rules.json` | Meal slots, times and breakfast suitability |
-| `tests/` | Deterministic regression tests |
+| `evaluation_results/` | Latest detailed 20-case evaluation and cost evidence |
 | `DATA_EXPLAINER.md` | Data methodology and limitations |
 | `EVALS_EXPLAINER.md` | Evaluation design, metrics and interpretation |
 
