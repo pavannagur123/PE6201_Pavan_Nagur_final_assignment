@@ -1,0 +1,21 @@
+case_id,kind,expected,actual,passed,layer_1_ran,python_ran,layer_2_ran,optimizer_plan_id,ai_plan_id,error
+E01,normal,layer_2,layer_2,True,True,True,True,H06x1+N05x1.5+H02x2,W05x1+K06x1.5+H01x2,
+E02,normal,layer_2,layer_2,True,True,True,True,V06x1+H01x1.5+M01x1.5,B04x1+H01x2+I01x1,
+E03,normal,layer_2,layer_2,True,True,True,True,B01x1+M01x1.5+N01x1.5,B01x1+M01x1.5+N01x1.5,
+E04,normal,layer_2,layer_2,True,True,True,True,B01x1+M01x1.5+N01x1.5,B01x1+M01x1.5+N01x1.5,
+E05,normal,layer_2,layer_2,True,True,True,True,B05x1+H04x2+N05x1.5,B05x1+H04x2+I03x1.5,
+E06,normal,layer_2,clarification,False,False,False,False,,,"{'guardrail': 'conflicting_dietary_requirement', 'detail': 'You requested both vegetarian and chicken for lunch. Which one should MacroFit use?', 'evaluation_note': 'Live clarification skipped in evaluation mode; moving to the next case.'}"
+E07,normal,layer_2,layer_2,True,True,True,True,V06x1+H01x1.5+M01x1.5,V06x1+H01x1.5+M01x1.5,
+E08,normal,layer_2,layer_2,True,True,True,True,B01x1+M01x1.5+N01x1.5,B03x1+I05x2+I01x1,
+E09,normal,layer_2,layer_2,True,True,True,True,H06x1+N05x1.5+H02x2,H06x1+N05x1.5+H02x2,
+E10,normal,layer_2,layer_2,True,True,True,True,B01x1+M01x1.5+N01x1.5,B01x1+M01x1.5+N01x1.5,
+E11,normal,layer_2,layer_2,True,True,True,True,B01x1+M01x1.5+N01x1.5,H06x1+H02x2+N05x1.5,
+E12,normal,layer_2,layer_2,True,True,True,True,H06x1+H02x2+N05x1.5,W03x1+M01x1.5+M05x1.5,
+E13,outlier,clarification,clarification,True,False,False,False,,,"{'guardrail': 'conflicting_dietary_requirement', 'detail': 'You requested both vegetarian and chicken for dinner. Which one should MacroFit use?', 'evaluation_note': 'Live clarification skipped in evaluation mode; moving to the next case.'}"
+E14,outlier,infeasible,infeasible,True,True,True,False,,,
+E15,outlier,clarification,clarification,True,False,False,False,,,"{'guardrail': 'conflicting_dietary_requirement', 'detail': 'You requested both vegetarian and chicken for lunch. Which one should MacroFit use?', 'evaluation_note': 'Live clarification skipped in evaluation mode; moving to the next case.'}"
+E16,outlier,clarification,clarification,True,False,False,False,,,"{'guardrail': 'missing_meal_reference', 'detail': ""Please name breakfast, lunch or dinner instead of referring to 'that meal' or 'the other meal'."", 'evaluation_note': 'Live clarification skipped in evaluation mode; moving to the next case.'}"
+E17,outlier,guardrail_blocked,guardrail_blocked,True,False,False,False,,,"{'guardrail': 'prompt_injection_detected', 'detail': 'Please restate the request using only food preferences or meal-planning information.'}"
+E18,outlier,guardrail_blocked,guardrail_blocked,True,False,False,False,,,"{'guardrail': 'prompt_injection_detected', 'detail': 'Please restate the request using only food preferences or meal-planning information.'}"
+E19,outlier,layer_2,layer_2,True,True,True,True,B01x1+M01x1.5+N01x1.5,B03x1+I01x1+I05x2,
+E20,outlier,clarification,clarification,True,False,False,False,,,"{'guardrail': 'unsafe_conflicting_intake', 'detail': 'You requested both no food and a very high intake. Please confirm that you want a normal meal plan.', 'evaluation_note': 'Live clarification skipped in evaluation mode; moving to the next case.'}"

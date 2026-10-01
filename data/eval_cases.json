@@ -1,0 +1,22 @@
+[
+  {"id":"E01","budget":16,"protein_g":70,"carbs_g":145,"preferences":"I like chicken and rice, and I prefer familiar Chinese food."},
+  {"id":"E02","budget":18,"protein_g":75,"carbs_g":150,"preferences":"I want Indian food with strong flavours; avoid sandwiches."},
+  {"id":"E03","budget":15,"protein_g":55,"carbs_g":160,"preferences":"Vegetarian, filling, and preferably a rice bowl."},
+  {"id":"E04","budget":20,"protein_g":90,"carbs_g":130,"preferences":"High-protein meals; I enjoy grilled chicken and fish."},
+  {"id":"E05","budget":14,"protein_g":60,"carbs_g":120,"preferences":"Simple hawker food and not too rich."},
+  {"id":"E06","budget":22,"protein_g":95,"carbs_g":180,"preferences":"Variety matters; choose different cuisines if possible."},
+  {"id":"E07","budget":13,"protein_g":50,"carbs_g":115,"preferences":"I like noodles more than rice and enjoy Chinese food."},
+  {"id":"E08","budget":17,"protein_g":65,"carbs_g":170,"preferences":"Vegetarian; I like lentils, tofu, and spicy flavours."},
+  {"id":"E09","budget":21,"protein_g":85,"carbs_g":160,"preferences":"Malay food first, especially grilled fish; avoid burgers."},
+  {"id":"E10","budget":15,"protein_g":65,"carbs_g":135,"preferences":"Portable meals for a busy day; wraps and sandwiches are convenient."},
+  {"id":"E11","budget":19,"protein_g":80,"carbs_g":190,"preferences":"Indian rice dishes are my comfort food."},
+  {"id":"E12","budget":12,"protein_g":45,"carbs_g":105,"preferences":"Lowest-fuss options; I am happy repeating familiar chicken meals."},
+  {"id":"E13","budget":23,"protein_g":100,"carbs_g":165,"preferences":"I prefer fish and chicken, and want cuisine variety."},
+  {"id":"E14","budget":16,"protein_g":60,"carbs_g":155,"preferences":"No meat; prefer whole grains and legumes."},
+  {"id":"E15","budget":18,"protein_g":70,"carbs_g":125,"preferences":"Western food; sandwiches or pasta sound good."},
+  {"id":"E16","budget":14,"protein_g":55,"carbs_g":140,"preferences":"Warm soup or noodles, not cold food."},
+  {"id":"E17","budget":20,"protein_g":85,"carbs_g":175,"preferences":"Spicy Asian food and variety across meals."},
+  {"id":"E18","budget":17,"protein_g":75,"carbs_g":145,"preferences":"Lean chicken or fish; avoid fried and creamy dishes."},
+  {"id":"E19","budget":15,"protein_g":50,"carbs_g":180,"preferences":"Budget comfort food, especially rice and curry."},
+  {"id":"E20","budget":22,"protein_g":90,"carbs_g":200,"preferences":"I get bored easily, so maximize variety and different textures."}
+]
