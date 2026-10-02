@@ -1,0 +1,17 @@
+{
+  "cases_run": 20,
+  "pipeline_passes": 18,
+  "pipeline_pass_rate": 0.9,
+  "layer_1_calls": 14,
+  "layer_2_calls": 11,
+  "blind_cases_judged": 7,
+  "ai_wins": 0,
+  "optimizer_wins": 0,
+  "ties": 7,
+  "api_calls": 25,
+  "prompt_tokens": 25022,
+  "completion_tokens": 2758,
+  "evaluation_cost_usd": 0.0052929000000000006,
+  "successful_ai_recommendations": 7,
+  "cost_per_judged_recommendation_usd": 0.0007561285714285715
+}

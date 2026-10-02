@@ -1,0 +1,15 @@
+case_id,interpretation,clarification_needed,breakfast,lunch,dinner,spice,breakfast_spice,lunch_spice,dinner_spice,heaviness,portability
+E01,"User prefers a vegetarian lunch and a spicy chicken dinner, with a desire for variety.",False,any,vegetarian,chicken,unspecified,any,any,spicy,unspecified,unspecified
+E02,Light vegetarian breakfast and portable chicken lunch.,False,vegetarian,chicken,any,unspecified,any,any,any,light,portable
+E03,User prefers no rice today and medium spice for meals.,False,any,any,any,unspecified,any,any,medium,unspecified,unspecified
+E04,User prefers warm comfort food with mild spice and no repeated dishes.,False,any,any,any,mild,any,any,any,unspecified,unspecified
+E05,Vegetarian all day with a hearty dinner.,False,vegetarian,vegetarian,vegetarian,unspecified,any,any,any,hearty,unspecified
+E06,Spicy chicken lunch and light vegetarian dinner.,False,any,chicken,vegetarian,unspecified,any,spicy,any,light,unspecified
+E07,Portable food for class and nothing soupy.,False,any,any,any,unspecified,any,any,any,unspecified,portable
+E08,User prefers Indian cuisine and a spicy chicken dinner.,False,any,any,chicken,unspecified,any,any,spicy,unspecified,unspecified
+E09,User prefers mild vegetarian lunch and wants to avoid rice bowls.,False,any,vegetarian,any,unspecified,any,mild,any,unspecified,unspecified
+E10,Lunch requires chicken and dinner requires vegetarian.,False,any,chicken,vegetarian,unspecified,any,any,any,unspecified,unspecified
+E11,User prefers no chicken for dinner and spicy chicken for lunch.,False,any,chicken,not_chicken,unspecified,any,spicy,any,unspecified,unspecified
+E12,"User prefers vegetarian for lunch, any food for dinner, and portable food.",False,any,vegetarian,any,unspecified,any,any,any,unspecified,portable
+E14,User has not specified any dietary restrictions or preferences for meals.,False,any,any,any,unspecified,any,any,any,unspecified,unspecified
+E19,"User prefers a portable lunch and a spicy dinner, with no repeated food.",False,any,any,any,unspecified,any,any,spicy,unspecified,portable
